@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Yelee主题侧边栏github图标不显示</title>
+      <link href="/2020/03/15/github-icom-no-display/"/>
+      <url>/2020/03/15/github-icom-no-display/</url>
+      
+        <content type="html"><![CDATA[<h1 id="图标配置文件"><a href="#图标配置文件" class="headerlink" title="图标配置文件"></a>图标配置文件</h1><p>配置文件位置<code>E:\blog\themes\yelee\source\css\\_partial\customise\social-icon.styl</code>，46-49行设置了github图标，该地址已实效。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">.GitHub</span><br><span class="line">    background url(&#x2F;&#x2F;cdn.bootcss.com&#x2F;logos&#x2F;0.2.0&#x2F;github-octocat.svg) no-repeat white</span><br><span class="line">    background-size 90%</span><br><span class="line">    background-position 50% 100%</span><br></pre></td></tr></table></figure><a id="more"></a><h1 id="下载ico图标"><a href="#下载ico图标" class="headerlink" title="下载ico图标"></a>下载ico图标</h1><p><a href="https://www.iconfont.cn/" target="_blank" rel="noopener">Iconfont-阿里巴巴矢量图标库</a>,找到github相关图标下载至本地，放置在themes/yelee/source/img/目录下。</p><h1 id="配置本地图标"><a href="#配置本地图标" class="headerlink" title="配置本地图标"></a>配置本地图标</h1><p>配置文件位置<code>themes/yelee/source/css/_partial/customise/social-icon.styl</code>。在第40行增加<code>GitHub white 90</code>，GitHub是图片名，white是背景色，90是图标大小。最终结果如下：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">img-logo &#x3D; &quot;新浪微博&quot; #ecc260 80,   </span><br><span class="line">            &quot;知乎&quot; #0078d8 90,      </span><br><span class="line">            &quot;豆瓣&quot; #06c611 88,      </span><br><span class="line">            V2EX #e4cdb4 78,        </span><br><span class="line">            TiddlyWiki #6283dd 82,  </span><br><span class="line">            &quot;简书&quot; #e99888 82,      </span><br><span class="line">            SegmentFault #018f56 80,</span><br><span class="line">            &quot;网易云音乐&quot; #e51e02 80,</span><br><span class="line">            &quot;虾米音乐&quot; #ff6a00 82,  </span><br><span class="line">            CSDN red 82,            </span><br><span class="line">            &quot;博客园&quot; #217ed4 95,    </span><br><span class="line">            Plunker black 90,       </span><br><span class="line">            LOFTER #316061 75,      </span><br><span class="line">            Coding white 88,        </span><br><span class="line">            bilibili #f589a0 100,   </span><br><span class="line">            AcFun #fbc054 90,       </span><br><span class="line">            niconico white 70,      </span><br><span class="line">            Quora #b92b27 103,    &lt;---注意这个位置的逗号！  </span><br><span class="line">    GitHub white 90</span><br></pre></td></tr></table></figure><p>注释掉原来的配置：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;.GitHub</span><br><span class="line">&#x2F;&#x2F;    background url(&#x2F;&#x2F;cdn.bootcss.com&#x2F;logos&#x2F;0.2.0&#x2F;github-octocat.svg) no-repeat white</span><br><span class="line">&#x2F;&#x2F;    background-size 90%</span><br><span class="line">&#x2F;&#x2F;    background-position 50% 100%</span><br></pre></td></tr></table></figure><h1 id="重新生成文件"><a href="#重新生成文件" class="headerlink" title="重新生成文件"></a>重新生成文件</h1><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g或$ hexo generate</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> yelee </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Yelee主题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>yelee主题添加字数统计和阅读时长</title>
+      <link href="/2020/03/15/yelee-word-readtime-count/"/>
+      <url>/2020/03/15/yelee-word-readtime-count/</url>
+      
+        <content type="html"><![CDATA[<h1 id="安装-hexo-wordcount"><a href="#安装-hexo-wordcount" class="headerlink" title="安装 hexo-wordcount"></a>安装 hexo-wordcount</h1><p>博客目录下打开Git Bash Here 执行：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm i –save hexo-wordcount</span><br></pre></td></tr></table></figure><a id="more"></a><h1 id="创建-word-ejs文件"><a href="#创建-word-ejs文件" class="headerlink" title="创建 word.ejs文件"></a>创建 <code>word.ejs</code>文件</h1><p>文件位置：<code>E:\blog\themes\yelee\layout\_partial\post\word.ejs</code>，<code>style=&quot;margin-top:10px 0;margin-bottom:30px;</code>调整边距位置。</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;div style&#x3D;&quot;margin-top:10px 0;margin-bottom:30px;&quot;&gt;</span><br><span class="line">    &lt;span class&#x3D;&quot;post-time&quot;&gt;</span><br><span class="line">      &lt;span class&#x3D;&quot;post-meta-item-icon&quot;&gt;</span><br><span class="line">        &lt;i class&#x3D;&quot;fa fa-keyboard-o&quot;&gt;&lt;&#x2F;i&gt;</span><br><span class="line">        &lt;span class&#x3D;&quot;post-meta-item-text&quot;&gt;  字数统计: &lt;&#x2F;span&gt;</span><br><span class="line">        &lt;span class&#x3D;&quot;post-count&quot;&gt;&lt;%&#x3D; wordcount(post.content) %&gt;字&lt;&#x2F;span&gt;</span><br><span class="line">      &lt;&#x2F;span&gt;</span><br><span class="line">    &lt;&#x2F;span&gt;</span><br><span class="line"></span><br><span class="line">    &lt;span class&#x3D;&quot;post-time&quot;&gt;</span><br><span class="line">      &amp;nbsp; | &amp;nbsp;</span><br><span class="line">      &lt;span class&#x3D;&quot;post-meta-item-icon&quot;&gt;</span><br><span class="line">        &lt;i class&#x3D;&quot;fa fa-hourglass-half&quot;&gt;&lt;&#x2F;i&gt;</span><br><span class="line">        &lt;span class&#x3D;&quot;post-meta-item-text&quot;&gt;  阅读时长: &lt;&#x2F;span&gt;</span><br><span class="line">        &lt;span class&#x3D;&quot;post-count&quot;&gt;&lt;%&#x3D; min2read(post.content) %&gt;分&lt;&#x2F;span&gt;</span><br><span class="line">      &lt;&#x2F;span&gt;</span><br><span class="line">    &lt;&#x2F;span&gt;</span><br><span class="line">&lt;&#x2F;div&gt;</span><br></pre></td></tr></table></figure><h1 id="修改article-ejs"><a href="#修改article-ejs" class="headerlink" title="修改article.ejs"></a>修改<code>article.ejs</code></h1><p>文件位置<code>E:\blog\themes\yelee\layout\_partial\article.ejs</code>，在13行位置加入以下代码：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;!-- 开始添加字数统计--&gt;</span><br><span class="line">&lt;% if(theme.word_count &amp;&amp; !post.no_word_count)&#123;%&gt;</span><br><span class="line">  &lt;%- partial(&#39;post&#x2F;word&#39;) %&gt;</span><br><span class="line">  &lt;% &#125; %&gt;</span><br><span class="line"> &lt;!-- 添加完成 --&gt;</span><br></pre></td></tr></table></figure><p>最终结果：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">&lt;div class&#x3D;&quot;article-inner&quot;&gt;</span><br><span class="line">    &lt;% if (theme.fancybox)&#123; %&gt;</span><br><span class="line">      &lt;input type&#x3D;&quot;hidden&quot; class&#x3D;&quot;isFancy&quot; &#x2F;&gt;</span><br><span class="line">    &lt;% &#125; %&gt;</span><br><span class="line">    &lt;% if (post.link || post.title)&#123; %&gt;</span><br><span class="line">      &lt;header class&#x3D;&quot;article-header&quot;&gt;</span><br><span class="line">        &lt;%- partial(&#39;post&#x2F;title&#39;, &#123;class_name: &#39;article-title&#39;&#125;) %&gt;</span><br><span class="line">        &lt;!-- 开始添加字数统计--&gt;</span><br><span class="line">        &lt;% if(theme.word_count &amp;&amp; !post.no_word_count)&#123;%&gt;</span><br><span class="line">          &lt;%- partial(&#39;post&#x2F;word&#39;) %&gt;</span><br><span class="line">          &lt;% &#125; %&gt;</span><br><span class="line">         &lt;!-- 添加完成 --&gt;</span><br><span class="line">      &lt;&#x2F;header&gt;</span><br></pre></td></tr></table></figure><h1 id="修改主题配置文件"><a href="#修改主题配置文件" class="headerlink" title="修改主题配置文件"></a>修改主题配置文件</h1><p>文件位置<code>E:\blog\themes\yelee\\_config.yml</code></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">#字数统计开关</span><br><span class="line">word_count: True</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> yelee </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> yelee主题 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
