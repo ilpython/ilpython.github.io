@@ -15,28 +15,28 @@
 
 
 
-<meta name="description" content="ʲô��SHELLLinux����ϵͳ�ǰ�װ��Ӳ��֮ǰ����Ӳ���Ĳ�����Ҫͨ������ϵͳ����ô���Բ���ϵͳ��ʹ�������������в�������windons�Ĳ���һ������linux��Ϊһ��������Ĳ���ϵͳ��һ�㰲װ�ڷ������ϣ��û�ͨ��Զ�����Ӻ�ʹ�ã�ͨ��ʹ�����ʽ������ʹ��linuxϵͳ����">
+<meta name="description" content="什么是SHELLLinux操作系统是安装在硬件之前，对硬件的操作需要通过操作系统，那么，对操作系统的使用则可以桌面进行操作，像windons的操作一样，但linux作为一个多任务的操作系统，一般安装在服务器上，用户通过远程连接后使用，通常使用命令方式管理和使用linux系统，命令行的入口即是shell，shell类似于windowns下的cmd或powershell。它是系统的用户界面，提供了用户">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Linux ��������SHELL">
+<meta property="og:title" content="Linux 命令行与SHELL">
 <meta property="og:url" content="http://ilpython.github.io/2020/03/21/Linux-CMDLINE/index.html">
 <meta property="og:site_name" content="moix&#39;s blog">
-<meta property="og:description" content="ʲô��SHELLLinux����ϵͳ�ǰ�װ��Ӳ��֮ǰ����Ӳ���Ĳ�����Ҫͨ������ϵͳ����ô���Բ���ϵͳ��ʹ�������������в�������windons�Ĳ���һ������linux��Ϊһ��������Ĳ���ϵͳ��һ�㰲װ�ڷ������ϣ��û�ͨ��Զ�����Ӻ�ʹ�ã�ͨ��ʹ�����ʽ������ʹ��linuxϵͳ����">
-<meta property="og:image" content="http://ilpython.github.io/.io//image-20200321164616161.png">
+<meta property="og:description" content="什么是SHELLLinux操作系统是安装在硬件之前，对硬件的操作需要通过操作系统，那么，对操作系统的使用则可以桌面进行操作，像windons的操作一样，但linux作为一个多任务的操作系统，一般安装在服务器上，用户通过远程连接后使用，通常使用命令方式管理和使用linux系统，命令行的入口即是shell，shell类似于windowns下的cmd或powershell。它是系统的用户界面，提供了用户">
+<meta property="og:image" content="http://ilpython.github.io/2020/03/21/Linux-CMDLINE/image-20200321164616161.png">
 <meta property="article:published_time" content="2020-03-21T07:14:56.000Z">
-<meta property="article:modified_time" content="2020-03-21T09:26:40.060Z">
+<meta property="article:modified_time" content="2020-03-21T10:34:40.416Z">
 <meta property="article:author" content="追风少年">
 <meta property="article:tag" content="Linux">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="http://ilpython.github.io/.io//image-20200321164616161.png">
+<meta name="twitter:image" content="http://ilpython.github.io/2020/03/21/Linux-CMDLINE/image-20200321164616161.png">
 
-<link rel="apple-touch-icon" href= "/apple-touch-icon.png">
+<link rel="apple-touch-icon" href= "//apple-touch-icon.png">
 
 
     <link rel="alternate" href="/atom.xml" title="moix&#39;s blog" type="application/atom+xml">
 
 
 
-    <link rel="shortcut icon" href="/favicon.png">
+    <link rel="shortcut icon" href="//favicon.png">
 
 
 
@@ -61,7 +61,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>Linux ��������SHELL | moix&#39;s blog</title>
+<title>Linux 命令行与SHELL | moix&#39;s blog</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -89,7 +89,7 @@
 
 
 
-    <script> yiliaConfig.rootUrl = "\/";</script>
+    <script> yiliaConfig.rootUrl = /; </script>
 
 
 
@@ -172,13 +172,13 @@
                     <nav class="header-menu">
                         <ul>
                         
-                            <li><a href="/">主页</a></li>
+                            <li><a href="//">主页</a></li>
                         
-                            <li><a href="/archives/">所有文章</a></li>
+                            <li><a href="//archives/" target="_blank" rel="noopener">所有文章</a></li>
                         
-                            <li><a href="/tags/">标签云</a></li>
+                            <li><a href="//tags/" target="_blank" rel="noopener">标签云</a></li>
                         
-                            <li><a href="/about/">关于我</a></li>
+                            <li><a href="//about/" target="_blank" rel="noopener">关于我</a></li>
                         
                         </ul>
                     </nav>
@@ -296,7 +296,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      Linux ��������SHELL
+      Linux 命令行与SHELL
     </h1>
   
 
@@ -307,7 +307,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-keyboard-o"></i>
         <span class="post-meta-item-text">  字数统计: </span>
-        <span class="post-count">559字</span>
+        <span class="post-count">1,415字</span>
       </span>
     </span>
 
@@ -316,7 +316,7 @@
       <span class="post-meta-item-icon">
         <i class="fa fa-hourglass-half"></i>
         <span class="post-meta-item-text">  阅读时长: </span>
-        <span class="post-count">3分</span>
+        <span class="post-count">6分</span>
       </span>
     </span>
 </div>
@@ -343,44 +343,45 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <h1 id="ʲo��SHELL"><a href="#ʲo��SHELL" class="headerlink" title="ʲô��SHELL"></a>ʲô��SHELL</h1><p>Linux����ϵͳ�ǰ�װ��Ӳ��֮ǰ����Ӳ���Ĳ�����Ҫͨ������ϵͳ����ô���Բ���ϵͳ��ʹ�������������в�������windons�Ĳ���һ������linux��Ϊһ��������Ĳ���ϵͳ��һ�㰲װ�ڷ������ϣ��û�ͨ��Զ�����Ӻ�ʹ�ã�ͨ��ʹ�����ʽ������ʹ��linuxϵͳ�������е���ڼ���shell��shell������windowns�µ�cmd��powershell������ϵͳ���û����棬�ṩ���û����ں˽��н���������һ�ֽӿڡ��������û������������������ں�ȥִ�С�</p>
-<p>��ñ��ҵLnux��Ϊ�û��ṩ��Ĭ��shell�� GNU Bourne-Again Shell��bash����Bash����UNIX���Ƶ�ϵͳ��ʹ�õ�����һ����ɹ�she�ĸĽ��汾���� Bourne shel1��sh��������bash��ϵͳ���ṩ������shell:</p>
+        <h1 id="什么是SHELL"><a href="#什么是SHELL" class="headerlink" title="什么是SHELL"></a>什么是SHELL</h1><p>Linux操作系统是安装在硬件之前，对硬件的操作需要通过操作系统，那么，对操作系统的使用则可以桌面进行操作，像windons的操作一样，但linux作为一个多任务的操作系统，一般安装在服务器上，用户通过远程连接后使用，通常使用命令方式管理和使用linux系统，命令行的入口即是shell，shell类似于windowns下的cmd或powershell。它是系统的用户界面，提供了用户与内核进行交互操作的一种接口。它接收用户输入的命令并把它送入内核去执行。</p>
+<p>红帽企业Lnux中为用户提供的默认shell是 GNU Bourne-Again Shell（bash）。Bash是与UNIX类似的系统上使用的其中一个最成功she的改进版本，即 Bourne shel1（sh）。除了bash，系统还提供了其他shell:</p>
+<a id="more"></a>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">[root@node03 ~]# cat &#x2F;etc&#x2F;shells </span><br><span class="line">&#x2F;bin&#x2F;sh</span><br><span class="line">&#x2F;bin&#x2F;bash</span><br><span class="line">&#x2F;sbin&#x2F;nologin</span><br><span class="line">&#x2F;bin&#x2F;dash</span><br><span class="line">&#x2F;bin&#x2F;tcsh</span><br><span class="line">&#x2F;bin&#x2F;csh</span><br></pre></td></tr></table></figure>
 
-<h1 id="shell��ʾ��"><a href="#shell��ʾ��" class="headerlink" title="shell��ʾ��"></a>shell��ʾ��</h1><h2 id="I����ʾ��"><a href="#I����ʾ��" class="headerlink" title="Ĭ����ʾ��"></a>Ĭ����ʾ��</h2><p>Ϊ������root�û����root�û���shell��ʾ��Ĭ���ǲ�һ���ġ�</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ROOT�û�</span><br><span class="line">[root@node03 ~]# </span><br><span class="line"></span><br><span class="line">��root�û�</span><br><span class="line">[admin@node03 ~]$</span><br></pre></td></tr></table></figure>
+<h1 id="shell提示符"><a href="#shell提示符" class="headerlink" title="shell提示符"></a>shell提示符</h1><h2 id="默认提示符"><a href="#默认提示符" class="headerlink" title="默认提示符"></a>默认提示符</h2><p>为了区分root用户与非root用户，shell提示符默认是不一样的。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">ROOT用户</span><br><span class="line">[root@node03 ~]# </span><br><span class="line"></span><br><span class="line">非root用户</span><br><span class="line">[admin@node03 ~]$</span><br></pre></td></tr></table></figure>
 
-<p>��ʾ����������PS1�������ƣ�</p>
+<p>提示符的设置由PS1变量控制：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[root@node03 ~]# echo $PS1</span><br><span class="line">[\u@\h \W]\$</span><br></pre></td></tr></table></figure>
 
-<p>�����ļ�Ϊ/etc/bashrc </p>
+<p>设置文件为/etc/bashrc </p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">[root@node03 ~]# vi &#x2F;etc&#x2F;bashrc </span><br><span class="line">...</span><br><span class="line"> [ &quot;$PS1&quot; &#x3D; &quot;\\s-\\v\\\$ &quot; ] &amp;&amp; PS1&#x3D;&quot;[\u@\h \W]\\$ &quot;</span><br><span class="line"> ...</span><br></pre></td></tr></table></figure>
 
-<p>PS1��������ʾ�������:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">\d �����ڣ���ʽΪweekday month date�����磺Thu Mar 19</span><br><span class="line">\H ���������������ơ����磺hostname��node03.bj</span><br><span class="line">\h ����ȡ��������ʡ����������node03.bj����ʾnode02</span><br><span class="line">\t ����ʾʱ��Ϊ24Сʱ��ʽ���磺HH��MM��SS</span><br><span class="line">\T ����ʾʱ��Ϊ12Сʱ��ʽ</span><br><span class="line">\A ����ʾʱ��Ϊ24Сʱ��ʽ��ʱ��֣�HH��MM</span><br><span class="line">\u ����ǰ�û����˺����� �磺root</span><br><span class="line">\v ��BASH�İ汾��Ϣ  ��:4.1</span><br><span class="line">\w �������Ĺ���Ŀ¼���ơ���Ŀ¼����~����</span><br><span class="line">\W ����ʾ�༶Ŀ¼�����һ��Ŀ¼</span><br><span class="line"># ���������</span><br><span class="line">$ ����ʾ�ַ��������rootʱ����ʾ��Ϊ��# ����ͨ�û���Ϊ��$</span><br></pre></td></tr></table></figure>
+<p>PS1变量中提示符各项含义:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">\d ：日期，格式为weekday month date，例如：Thu Mar 19</span><br><span class="line">\H ：完整的主机名称。例如：hostname是node03.bj</span><br><span class="line">\h ：仅取主机名，省略域名，如node03.bj仅显示node02</span><br><span class="line">\t ：显示时间为24小时格式，如：HH：MM：SS</span><br><span class="line">\T ：显示时间为12小时格式</span><br><span class="line">\A ：显示时间为24小时格式的时与分：HH：MM</span><br><span class="line">\u ：当前用户的账号名称 如：root</span><br><span class="line">\v ：BASH的版本信息  如:4.1</span><br><span class="line">\w ：完整的工作目录名称。家目录会以~代替</span><br><span class="line">\W ：显示多级目录的最后一级目录</span><br><span class="line"># ：命令序号</span><br><span class="line">$ ：提示字符，如果是root时，提示符为：# ，普通用户则为：$</span><br></pre></td></tr></table></figure>
 
-<p>���÷������£�</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">��������ʾʱ��</span><br><span class="line">[root@node03 ~]# PS1&#x3D;&quot;[\t#\u@\h \W]\\$ &quot;</span><br><span class="line">[00:56:10#root@node03 ~]# </span><br><span class="line"></span><br><span class="line">��������ʾ�������</span><br><span class="line">[00:57:45#root@node03 ~]# PS1&#x3D;&quot;[\t#\u@\h \W]:\#\\$ &quot;</span><br><span class="line">[00:57:49#root@node03 ~]:19# date</span><br><span class="line">Thu Mar 19 00:57:53 CST 2020</span><br><span class="line">[00:57:53#root@node03 ~]:20#</span><br></pre></td></tr></table></figure>
+<p>设置方法如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">命令行显示时间</span><br><span class="line">[root@node03 ~]# PS1&#x3D;&quot;[\t#\u@\h \W]\\$ &quot;</span><br><span class="line">[00:56:10#root@node03 ~]# </span><br><span class="line"></span><br><span class="line">命令行显示命令序号</span><br><span class="line">[00:57:45#root@node03 ~]# PS1&#x3D;&quot;[\t#\u@\h \W]:\#\\$ &quot;</span><br><span class="line">[00:57:49#root@node03 ~]:19# date</span><br><span class="line">Thu Mar 19 00:57:53 CST 2020</span><br><span class="line">[00:57:53#root@node03 ~]:20#</span><br></pre></td></tr></table></figure>
 
-<h2 id="���Ի���ʾ��"><a href="#���Ի���ʾ��" class="headerlink" title="���Ի���ʾ��"></a>���Ի���ʾ��</h2><p>��ʱ��������ʹ��shell�ű�������ʱϣ���������ֵ���ʾ����ǼӴֻ������ɫ�ģ����������ã���<code>faild</code>,<code>sucess</code>,shell����ʾ��Ҳ֧����ɫ���Զ��塣Զ�̵�crt�ȹ�����Ҫ������ɫ֧�֡�</p>
-<p>��ʽ��</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">PS1&#x3D;&quot;\e[F;Bm ���Ǳ��� \e[0m&quot;</span><br><span class="line">\e[F;Bm ��ʾ��ɫ���õĿ�ʼ��F&#x3D;Foreground��ǰ��ɫ��B&#x3D;Backgroup������ɫ��</span><br><span class="line">	F��ȡֵ��Χ(��������) ����&#x3D;0����ɫ&#x3D;30����ɫ&#x3D;31����ɫ&#x3D;32����ɫ&#x3D;33����ɫ&#x3D;34�����&#x3D;35.��ɫ&#x3D;36����ɫ&#x3D;37</span><br><span class="line">	B��ȡֵ��Χ(������ɫ) ����&#x3D;0����ɫ&#x3D;40����ɫ&#x3D;41����ɫ&#x3D;42����ɫ&#x3D;43����ɫ&#x3D;44�����&#x3D;45.��ɫ&#x3D;46����ɫ&#x3D;47</span><br><span class="line">	F�������´�����䣬�γ��µ���ʽ0&#x3D;OFF��1&#x3D;������ʾ��4&#x3D;underline��7&#x3D;������ʾ��8&#x3D;���ɼ�����1;31m��ʾ��ɫ����Ӵ֡�</span><br><span class="line"></span><br><span class="line">\e[0m ��ʾ��ɫ���õĽ�����һֱ����</span><br></pre></td></tr></table></figure>
+<h2 id="个性化提示符"><a href="#个性化提示符" class="headerlink" title="个性化提示符"></a>个性化提示符</h2><p>有时候我们在使用shell脚本或命令时希望部分文字的显示结果是加粗或带有颜色的，起到提醒作用，如<code>faild</code>,<code>sucess</code>,shell的提示符也支持颜色的自定义。远程的crt等工具需要开启颜色支持。</p>
+<p>格式：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">PS1&#x3D;&quot;\e[F;Bm 我是变量 \e[0m&quot;</span><br><span class="line">\e[F;Bm 表示颜色设置的开始，F&#x3D;Foreground，前颜色，B&#x3D;Backgroup，背景色。</span><br><span class="line">	F可取值范围(不带背景) 重置&#x3D;0，黑色&#x3D;30，红色&#x3D;31，绿色&#x3D;32，黄色&#x3D;33，蓝色&#x3D;34，洋红&#x3D;35.青色&#x3D;36，白色&#x3D;37</span><br><span class="line">	B可取值范围(带背景色) 重置&#x3D;0，黑色&#x3D;40，红色&#x3D;41，绿色&#x3D;42，黄色&#x3D;43，蓝色&#x3D;44，洋红&#x3D;45.青色&#x3D;46，白色&#x3D;47</span><br><span class="line">	F可与以下代码搭配，形成新的样式0&#x3D;OFF，1&#x3D;高亮显示，4&#x3D;underline，7&#x3D;反白显示，8&#x3D;不可见，如1;31m表示红色字体加粗。</span><br><span class="line"></span><br><span class="line">\e[0m 表示颜色设置的结束，一直不变</span><br></pre></td></tr></table></figure>
 
-<p>ʾ����</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">PS1&#x3D;&quot;\e[1;31m\e[47m[\u@\h \w ]\$ \e[0m&quot;</span><br><span class="line">\e[1;31m ��ɫ�Ӵ�����</span><br><span class="line">\e[47m ��ɫ����</span><br><span class="line">\e[0m ��ɫ���ý���</span><br></pre></td></tr></table></figure>
+<p>示例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">PS1&#x3D;&quot;\e[1;31m\e[47m[\u@\h \w ]\$ \e[0m&quot;</span><br><span class="line">\e[1;31m 红色加粗字体</span><br><span class="line">\e[47m 灰色背景</span><br><span class="line">\e[0m 颜色设置结束</span><br></pre></td></tr></table></figure>
 
-<p>��ɫ���Խű�</p>
+<p>颜色测试脚本</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">#!&#x2F;bin&#x2F;bash</span><br><span class="line">#</span><br><span class="line">#   This file echoes a bunch of color codes to the </span><br><span class="line">#   terminal to demonstrate what&#39;s available.  Each </span><br><span class="line">#   line is the color code of one forground color,</span><br><span class="line">#   out of 17 (default + 16 escapes), followed by a </span><br><span class="line">#   test use of that color on all nine background </span><br><span class="line">#   colors (default + 8 escapes).</span><br><span class="line">#</span><br><span class="line"></span><br><span class="line">T&#x3D;&#39;fgt&#39;   # The test text</span><br><span class="line"></span><br><span class="line">echo -e &quot;\n                 40m     41m     42m     43m\</span><br><span class="line">     44m     45m     46m     47m&quot;;</span><br><span class="line">for FGs in &#39;    m&#39; &#39;   1m&#39; &#39;  30m&#39; &#39;1;30m&#39; &#39;  31m&#39; &#39;1;31m&#39; &#39;  32m&#39; \</span><br><span class="line">           &#39;1;32m&#39; &#39;  33m&#39; &#39;1;33m&#39; &#39;  34m&#39; &#39;1;34m&#39; &#39;  35m&#39; &#39;1;35m&#39; \</span><br><span class="line">           &#39;  36m&#39; &#39;1;36m&#39; &#39;  37m&#39; &#39;1;37m&#39; &#39;   4m&#39; &#39;  30m&#39; &#39;4;30m&#39; \</span><br><span class="line">           &#39;  31m&#39; &#39;4;31m&#39; &#39;  32m&#39; &#39;4;32m&#39; &#39;  33m&#39; &#39;4;33m&#39; &#39;  34m&#39; \</span><br><span class="line">           &#39;4;34m&#39; &#39;  35m&#39; &#39;4;35m&#39; &#39;  36m&#39; &#39;4;36m&#39; &#39;  37m&#39; &#39;4;37m&#39;;</span><br><span class="line">  do FG&#x3D;$&#123;FGs&#x2F;&#x2F; &#x2F;&#125;</span><br><span class="line">  echo -en &quot; $FGs \033[$FG  $T  &quot;</span><br><span class="line">  for BG in 40m 41m 42m 43m 44m 45m 46m 47m;</span><br><span class="line">    do echo -en &quot;$EINS \033[$FG\033[$BG  $T  \033[0m&quot;;</span><br><span class="line">  done</span><br><span class="line">  echo;</span><br><span class="line">done</span><br><span class="line">echo</span><br></pre></td></tr></table></figure>
 
-<p><img src="/.io//image-20200321164616161.png" alt="�ն���ɫ����"></p>
-<h1 id="SHELL�ն�"><a href="#SHELL�ն�" class="headerlink" title="SHELL�ն�"></a>SHELL�ն�</h1><p>�����ն˶�ͼ�ν�������������˱��������û�б仯��һ��ʹ��<code>alt+ctrl+f1</code> ��<code>alt+ctrl+f7</code> �����ն��л���</p>
-<p>�ں�ñ��ҵ Linux8�У��ṩ7��shell�նˣ����ͼ�λ������ã����¼��Ļ�����ڳ�Ϊtty1�ĵ�һ���������̨�����С��ڶ��������������̨�����ṩ��������ı���¼��ʾ���������һ���������̨��ͼ������ռ����ʹ�õڶ����������̨����ͼ�ν��档</p>
-<p>�ں�ñ��ҵ Linux6��7�У�ͼ�ε�¼��Ļ�ڵ�һ�������̨�����У��ٴε�¼ʱ����ʼͼ�λ�����ȡ����һ�������̨�еĵ�¼��Ļ���������µ��������̨��������</p>
-<p>�ں�ñ��ҵLinu��5������汾�У�ǰ�����������̨ʼ�ն��ṩ�ı���¼��ʾ�������ͼ�λ����������У�����λ�ڵ��߸��������̨��</p>
-<h1 id="��¼���˳�"><a href="#��¼���˳�" class="headerlink" title="��¼���˳�"></a>��¼���˳�</h1><h2 id="Զ������"><a href="#Զ������" class="headerlink" title="Զ������"></a>Զ������</h2><p>һ�������Linux��Ϊ����������ͨ��crt��ssh���߽���Զ������</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh root@172.16.10.100</span><br><span class="line">ʹ��root�û���¼Զ������172.16.10.100</span><br></pre></td></tr></table></figure>
+<p><img src="image-20200321164616161.png" alt="aaa"></p>
+<h1 id="SHELL终端"><a href="#SHELL终端" class="headerlink" title="SHELL终端"></a>SHELL终端</h1><p>虚拟终端对图形界面的启动进行了变更，其他没有变化，一般使用<code>alt+ctrl+f1</code> 至<code>alt+ctrl+f7</code> 进行终端切换。</p>
+<p>在红帽企业 Linux8中，提供7个shell终端，如果图形环境可用，则登录屏幕将会在称为tty1的第一个虚拟控制台中运行。第二到第六虚拟控制台上则提供另外五个文本登录提示符。如果第一个虚拟控制台被图形桌面占用则使用第二个虚拟控制台启动图形界面。</p>
+<p>在红帽企业 Linux6和7中，图形登录屏幕在第一虚拟控制台中运行，再次登录时，初始图形环境将取代第一虚拟控制台中的登录屏幕，而不在新的虚拟控制台中启动。</p>
+<p>在红帽企业Linu×5及更早版本中，前六个虚拟控制台始终都提供文本登录提示符。如果图形环境正在运行，它将位于第七个虚拟控制台。</p>
+<h1 id="登录与退出"><a href="#登录与退出" class="headerlink" title="登录与退出"></a>登录与退出</h1><h2 id="远程连接"><a href="#远程连接" class="headerlink" title="远程连接"></a>远程连接</h2><p>一般情况，Linux作为服务器都是通过crt等ssh工具进行远程连接</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh root@172.16.10.100</span><br><span class="line">使用root用户登录远程主机172.16.10.100</span><br></pre></td></tr></table></figure>
 
-<h2 id="�˳�"><a href="#�˳�" class="headerlink" title="�˳�"></a>�˳�</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># exit;</span><br><span class="line">��</span><br><span class="line">ctrl+d</span><br></pre></td></tr></table></figure>
+<h2 id="退出"><a href="#退出" class="headerlink" title="退出"></a>退出</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># exit;</span><br><span class="line">或</span><br><span class="line">ctrl+d</span><br></pre></td></tr></table></figure>
 
 
       
@@ -390,12 +391,12 @@
   
     
     <div class="copyright">
-        <p><span>本文标题:</span><a href="/2020/03/21/Linux-CMDLINE/">Linux ��������SHELL</a></p>
+        <p><span>本文标题:</span><a href="/2020/03/21/Linux-CMDLINE/">Linux 命令行与SHELL</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">追风少年</a></p>
         <p><span>发布时间:</span>2020-03-21, 15:14:56</p>
-        <p><span>最后更新:</span>2020-03-21, 17:26:40</p>
+        <p><span>最后更新:</span>2020-03-21, 18:34:40</p>
         <p>
-            <span>原始链接:</span><a class="post-url" href="/2020/03/21/Linux-CMDLINE/" title="Linux ��������SHELL">http://ilpython.github.io/2020/03/21/Linux-CMDLINE/</a>
+            <span>原始链接:</span><a class="post-url" href="/2020/03/21/Linux-CMDLINE/" title="Linux 命令行与SHELL">http://ilpython.github.io/2020/03/21/Linux-CMDLINE/</a>
             <span class="copy-path" data-clipboard-text="原文: http://ilpython.github.io/2020/03/21/Linux-CMDLINE/　　作者: 追风少年" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
             <script> var clipboard = new Clipboard('.copy-path'); </script>
         </p>
@@ -423,7 +424,7 @@
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#ʲo��SHELL"><span class="toc-number">1.</span> <span class="toc-text">ʲô��SHELL</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#shell��ʾ��"><span class="toc-number">2.</span> <span class="toc-text">shell��ʾ��</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#I����ʾ��"><span class="toc-number">2.1.</span> <span class="toc-text">Ĭ����ʾ��</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#���Ի���ʾ��"><span class="toc-number">2.2.</span> <span class="toc-text">���Ի���ʾ��</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#SHELL�ն�"><span class="toc-number">3.</span> <span class="toc-text">SHELL�ն�</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#��¼���˳�"><span class="toc-number">4.</span> <span class="toc-text">��¼���˳�</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Զ������"><span class="toc-number">4.1.</span> <span class="toc-text">Զ������</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#�˳�"><span class="toc-number">4.2.</span> <span class="toc-text">�˳�</span></a></li></ol></li></ol>
+            <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#什么是SHELL"><span class="toc-number">1.</span> <span class="toc-text">什么是SHELL</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#shell提示符"><span class="toc-number">2.</span> <span class="toc-text">shell提示符</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#默认提示符"><span class="toc-number">2.1.</span> <span class="toc-text">默认提示符</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#个性化提示符"><span class="toc-number">2.2.</span> <span class="toc-text">个性化提示符</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#SHELL终端"><span class="toc-number">3.</span> <span class="toc-text">SHELL终端</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#登录与退出"><span class="toc-number">4.</span> <span class="toc-text">登录与退出</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#远程连接"><span class="toc-number">4.1.</span> <span class="toc-text">远程连接</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#退出"><span class="toc-number">4.2.</span> <span class="toc-text">退出</span></a></li></ol></li></ol>
         
     </div>
     <style>
@@ -459,7 +460,7 @@
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"Linux ��������SHELL　| moix's blog　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"Linux 命令行与SHELL　| moix's blog　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -491,7 +492,7 @@
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2020/03/21/Linux-CMDLINE/">Linux ��������SHELL</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/03/21/Linux-OS/">什么是Linux</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/03/15/github-icom-no-display/">Yelee主题侧边栏github图标不显示</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/03/15/yelee-word-readtime-count/">yelee主题添加字数统计和阅读时长</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2020/03/21/Linux-CMDLINE/">Linux 命令行与SHELL</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/03/21/Linux-OS/">什么是Linux</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/03/15/github-icom-no-display/">Yelee主题侧边栏github图标不显示</a></li><li class="post-list-item"><a class="post-list-link" href="/2020/03/15/yelee-word-readtime-count/">yelee主题添加字数统计和阅读时长</a></li></ul>
 
 
 
@@ -546,7 +547,7 @@
             }
             else {
                 var backgroundnum = 8;
-                var backgroundimg = "url(/background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
+                var backgroundimg = "url(//background/bg-x.jpg)".replace(/x/gi, Math.ceil(Math.random() * backgroundnum));
                 $("body").css({"background": backgroundimg, "background-attachment": "fixed", "background-size": "cover"});
             }
         })
